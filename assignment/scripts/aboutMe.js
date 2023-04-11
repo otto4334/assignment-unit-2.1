@@ -5,30 +5,30 @@ let firstName = 'Mike';
 let lastName = 'Otto';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-let fullName = firstName+' '+lastName;
+let fullName = (firstName +' '+ lastName);
 // 4 - Console log the value of `fullName`
 console.log(fullName);
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber=9
+let luckyNumber = 9;
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log('My name is',fullName+', and I think',luckyNumber,'is a winner!');
+console.log('My name is', fullName + ', and I think', luckyNumber, 'is a winner!');
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous=true
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
 let food='Sushi'
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-let pets=4
+let pets = 4
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets=3
+let friendsPets = 3
 // 11 - Add two pets to your `pets` variable
-pets+=2;
+pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-const allowedPets=8
+const allowedPets = 8
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
-if(adventurous==true){
+if(adventurous){
     console.log("Adventures are great!");
 }
 else{
@@ -36,7 +36,7 @@ else{
 }
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if(luckyNumber==2 && adventurous==true){
+if(luckyNumber == 2 && adventurous){
     console.log("Roll the dice!");
 }
 else{
@@ -47,13 +47,13 @@ else{
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
-if(pets<allowedPets){
+if(pets < allowedPets){
     console.log("I can have more pets!");
 }
-else if(pets==allowedPets){
+else if(pets == allowedPets){
     console.log("I have enough pets..");
 }
-else if(pets>allowedPets){
+else if(pets > allowedPets){
     console.log("I have too many pets!");
 }
 // STRETCH GOALS:
@@ -63,18 +63,15 @@ else if(pets>allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
-let mostPets=0;
 
-if(pets<friendsPets){
-    mostPets+=friendsPets;
-    console.log("My friend has the most pets at a total of",mostPets);
+if(pets < friendsPets){
+    console.log("My friend has the most pets at a total of", mostPets);
 }
-else if(pets==friendsPets){
-    console.log("We have the same amount of pets,",friendsPets);
+else if(pets == friendsPets){
+    console.log("We have the same amount of pets,", friendsPets);
 }
 else{
-    mostPets+=pets;
-    console.log("I have the most pets of my friends, I have",mostPets);
+    console.log("I have the most pets of my friends, I have", pets);
 }
 
 // 17 - Write a *switch* statement that logs:
@@ -98,7 +95,8 @@ switch (luckyNumber){
     console.log("Luck is what happens when preparation meets opportunity");
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-let message;
-message = adventurous = true ? 'Adventures are SUPER great!' : "Well h-how's about we don't and stay home, 'ay?";
+let message = adventurous 
+? 'Adventures are SUPER great!' 
+: "Well h-how's about we don't and stay home, 'ay?";
 console.log(message);
 
